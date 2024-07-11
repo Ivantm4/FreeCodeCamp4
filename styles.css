@@ -1,0 +1,168 @@
+body{
+    background-color:#efefef;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contenedor{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    font-size:62.5%;
+}
+#header{
+    position:fixed;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding:8px;
+    background-color:#ccc;
+}
+#header-img{
+    width:100px;
+}
+#nav-bar ul{
+    display:flex;
+    list-style:none;
+}
+#nav-bar li{
+    margin:0 15px;  
+}
+#nav-bar a{
+    text-decoration:none;
+    color:#449;
+    font-weight:bold;
+    font-size:1.05rem;
+}
+#nav-bar a:hover{
+    color:#48e;
+    text-decoration:underline;
+}
+section{
+    width: 100%;
+    padding: 20px; 
+}
+.section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    height:20%;
+    margin-top:100px;
+}
+.registro{
+    font-size:1rem;
+}
+input{
+    display:flex;
+    flex-direction:row;
+    margin:5px;
+}
+section h2{
+    margin-bottom:10px;
+    color:#449;
+}
+#submit{
+    margin:auto;
+    background-color:#ccf;
+    padding:3px 40px;
+    font-weight:bold;
+}
+.description{
+    display:flex;
+    box-shadow:0 0 10px #0003;
+    padding:10px;
+    width: 100%;
+    font-size:1rem;
+    margin:7px;
+    border-radius:15px;
+}
+.icono{
+    margin:auto;
+    margin-left:10px;
+    color:orange;
+}
+.text{
+    width: 100%;
+}
+p{
+    text-align: center;
+    margin-left:20px;
+}
+.precio{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size:1.2rem;
+    margin:100px;
+    box-shadow:0 0 10px #0006;
+    background-color:rgba(119, 123, 151, 0.2);
+    border-radius:20px;
+}
+.modelos{
+    margin:10px 50px;
+    font-size:1.1rem;
+}
+.modelo-h2{
+    font-size:1.4rem;
+    color:rgba(63, 142, 90, 0.9);
+    padding:5px;
+    margin:0;
+}
+ol> li{
+    margin:10px;
+    list-style:none;
+}
+.boton{
+    padding:5px 20px;
+    margin-top:20px;
+    border-radius:9px;
+    background-color:rgba(228, 222, 57, 0.8);
+}
+footer{
+    background-color:rgba(57, 57, 91, 0.99);
+    width:100%;
+    height:20;
+    font-size:1.3rem;
+    color:#fff;
+    padding-bottom:30px;
+}
+@media (max-width: 768px) {
+    #header {
+    flex-direction: column;
+    align-items: flex-start;
+    height:20%;
+    }
+    #header-img{
+    width:14%;
+    margin-left:10px;
+    }
+    #nav-bar ul {
+    flex-direction: column;
+    width: 100%;
+    }
+    #nav-bar li {
+    margin: 4px 0;
+    }
+    .registro{
+    margin-top:130px;
+    }
+    .description {
+    flex-direction: column;
+    align-items: center;
+    }
+    .precio {
+    flex-direction: column;
+    align-items: center;
+    }
+    .modelo {
+    margin: 20px 0;
+    }
+}
